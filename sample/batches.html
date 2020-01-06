@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>batches</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                $("#tr1").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#b2").click(function () {
+                $("#tr2").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#b3").click(function () {
+                $("#tr3").hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $("#bt2").click(function () {
+                $("#form2").toggle();
+            });
+        })
+    </script>
+    <style>
+            fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+
+            margin-right:10px;
+    margin-left:10px;
+}
+
+legend.scheduler-border {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+     width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+
+}
+
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left:10%;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#form2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left:5%;
+  margin-right:50%;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class='far fa-comment' style='font-size:36px'></i>feedback system</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <fieldset class="scheduler-border">
+        <legend class="scheduler-border">Batch details</legend>
+        <div class="container">
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Batch Name</th>
+                        <th>Course</th>
+                        <th>Faculty</th>
+                        <th>Location</th>
+                        <th>Duration</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="tr1">
+                        <td>1</td>
+                        <td>B001</td>
+                        <td>java</td>
+                        <td>james gosling</td>
+                        <td>bangalore</td>
+                        <td>2 months</td>
+                        <td><i class="fa fa-trash" id="b1"></i></td>
+                    </tr>
+                    <tr id="tr2">
+                        <td>2</td>
+                        <td>B002</td>
+                        <td>.net framework</td>
+                        <td>vint cerf</td>
+                        <td>bangalore</td>
+                        <td>4 months</td>
+                        <td><i class="fa fa-trash" id="b2"></i></td>
+                    </tr>
+                    <tr id="tr3">
+                        <td>3</td>
+                        <td>B003</td>
+                        <td>web technology</td>
+                        <td>tim berners lee</td>
+                        <td>bangalore</td>
+                        <td>3 months</td>
+                        <td><i class="fa fa-trash" id="b3"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </fieldset>
+    <br />
+
+    <button type="button" style="margin-left:30px;" class="btn btn-primary btn-lg" id="bt2">Add Batch</button>
+    <br />
+
+ 
+  
+
+        <div >
+            <form id="form2" >
+                <label >Enter Batch ID</label>
+                <input type="text" id="id" name="id" placeholder="enter batch id"><br />
+
+                <label >Enter Batch name</label>
+                <input type="text" id="bname" name="bname" placeholder="enter batch name"><br />
+
+                <label >Course</label>
+                <select id="course" name="course">
+                    <option value="java">Java</option>
+                    <option value="net">.Net framework </option>
+                    <option value="web">Web development</option>
+                </select>
+                <br />
+                <label >Enter Faculty Name</label>
+                <input type="text" id="fname" name="fname" placeholder="enter Faculty name"><br />
+
+                <label >Enter Location</label>
+                <input type="text" id="loc" name="loc" placeholder="enter Location"><br />
+
+                <label >Enter Duration</label>
+                <input type="text" id="dur" name="dur" placeholder="enter Duration"><br />
+                <br />
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+            
+
+
+</body>
+</html>
