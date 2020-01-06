@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> questions </title>
+    <!-- Latest compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+    <!-- jQuery library -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <!-- Latest compiled JavaScript -->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#q1").click(function () {
+                $("#qq1").hide();
+            });
+			 $("#q2").click(function () {
+                $("#qq2").hide();
+            });
+			$("#q3").click(function () {
+                $("#qq3").hide();
+            });
+			 $("#q4").click(function () {
+                $("#qq4").hide();
+            });
+			 $("#q5").click(function () {
+                $("#qq5").hide();
+            });
+			$("#q6").click(function () {
+                $("#qq6").hide();
+            });
+			 $("#q7").click(function () {
+                $("#qq7").hide();
+            });
+			 $("#q8").click(function () {
+                $("#qq8").hide();
+            });
+			  $("#q9").click(function () {
+                $("#qq9").hide();
+            });
+			  $("#q10").click(function () {
+                $("#qq10").hide();
+            });
+			  $("#q11").click(function () {
+                $("#qq11").hide();
+            });
+			  $("#q12").click(function () {
+                $("#qq12").hide();
+            });
+			
+			
+			
+			$("#bt1").click(function () {
+                $("#form1").toggle();
+            });
+			
+			$("#bt2").click(function(){
+                alert("question added successfully");
+});
+
+        });
+        
+    </script>
+    <style>
+    fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+            margin-right:10px;
+    margin-left:10px;
+}
+legend.scheduler-border {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+     width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+       
+}
+div i {
+    float:right;
+}
+.btn btn-primary {
+    margin-left:30px;
+}
+#form1 {
+    margin-left:50px;
+    margin-right:50px;
+}
+.scheduler-border {
+    margin-left:10%;
+    margin-right:10%;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class='far fa-comment' style='font-size:36px'></i>feedback system</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <fieldset class="scheduler-border">
+        <legend class="scheduler-border" id="lg1">course</legend>
+        <div class="control-group">
+    
+            <div class="controls bootstrap-timepicker">
+                <div class="alert alert-success" role="alert" id="qq1">
+                   1.&nbsp; Is this course benified in advancing your career?<i class="fa fa-trash" id="q1"></i>
+                </div>
+                <div class="alert alert-success" role="alert" id="qq2">
+                    2.&nbsp; Is course objectives are clearly stated?<i class="fa fa-trash" id="q2"></i>
+                </div>
+                <div class="alert alert-success" role="alert" id="qq3">
+                    3.&nbsp; Is material provided was relevent to course?<i class="fa fa-trash" id="q3"></i>
+                </div>
+                <div class="alert alert-success" role="alert" id="qq4">
+                    4.&nbsp; Is level of course was too high<i class="fa fa-trash" id="q4"></i>
+                </div>
+               
+               
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="scheduler-border">
+        <legend class="scheduler-border">faculty</legend>
+        <div class="control-group">
+           
+            <div class="controls bootstrap-timepicker">
+                <div class="alert alert-info" role="alert" id="qq5">
+                    1.&nbsp; Is instructor was organised and prepared for every class<i class="fa fa-trash" id="q5"></i>
+                </div>
+                <div class="alert alert-info" role="alert" id="qq6">
+                    2.&nbsp; Is contents were illustrated with adequate examples<i class="fa fa-trash" id="q6"></i>
+                </div>
+                <div class="alert alert-info" role="alert" id="qq7">
+                    3.&nbsp; Encouraged students to ask questions<i class="fa fa-trash" id="q7"></i>
+                </div>
+                <div class="alert alert-info" role="alert" id="qq8">
+                    4.&nbsp; Spoke Loudly and clearly<i class="fa fa-trash" id="q8"></i>
+                </div>
+                
+                
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="scheduler-border">
+        <legend class="scheduler-border" >Infrastructure</legend>
+        <div class="control-group">
+            
+            <div class="controls bootstrap-timepicker">
+                <div class="alert alert-warning" role="alert" id="qq9">
+                    1.&nbsp; Are required software installed on all systems?<i class="fa fa-trash" id="q9"></i>
+                </div>
+                <div class="alert alert-warning" role="alert" id="qq10">
+                    2.&nbsp; How well the course was organised by the company<i class="fa fa-trash" id="q10"></i>
+                </div>
+                <div class="alert alert-warning" role="alert" id="qq11">
+                    3.&nbsp; Health and safety considerations in campus<i class="fa fa-trash" id="q11"></i>
+                </div>
+                <div class="alert alert-warning" role="alert" id="qq12">
+                    4.&nbsp; Is it comfortable to find various departments in campus?<i class="fa fa-trash" id="q12"></i>
+                </div>
+             
+               
+            </div>
+        </div>
+    </fieldset>
+    <br />
+    
+    <button type="button" style="margin-left:30px;"class="btn btn-primary btn-lg" id="bt1">Add question</button>
+    <br />
+    <form id="form1">
+        <br />
+        <div class="form-group">
+            <label >Enter category id</label>
+            <input type="text" class="form-control" id="ctid" >
+          
+        </div>
+        <div class="form-group">
+            <label >Enter the question</label>
+            <input type="text" class="form-control" id="ques">
+        </div>
+       
+        <button type="submit" class="btn btn-primary" id="bt2">Submit</button>
+    </form>
+    
+</body>
+</html>
